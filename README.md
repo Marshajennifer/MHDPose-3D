@@ -29,7 +29,6 @@ Below is a short demo of the model output:
 
 
 
-Code will be published soon.
 
 ## Citation
 
