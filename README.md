@@ -39,7 +39,7 @@ We follow the same data setup as [VideoPose3D](https://github.com/facebookresear
 
 ### MPI-INF-3DHP
 
-We follow the data setup from [P-STMO](https://github.com/paTRICK-swk/P-STMO), with one difference: instead of training/evaluating on 3D poses rescaled to the Human3.6M universal skeleton height (`univ_annot3`), we use the original ground-truth 3D poses (`annot3`). Download our processed data from [here](#) and place it in the `./data` directory.
+We follow the data setup from [D3DP](https://github.com/paTRICK-swk/D3DP), which differs from P-STMO in one respect: instead of training/evaluating on 3D poses rescaled to the Human3.6M universal skeleton height (`univ_annot3`), it uses the original ground-truth 3D poses (`annot3`). This ensures that the reprojection of the 3D poses (used by JPMA) stays consistent with the 2D inputs, which the rescaled poses do not guarantee. Download our processed data from [here](#) and place it in the `./data` directory.
 
 ## Evaluating Pre-trained Models
 
@@ -86,7 +86,6 @@ python main.py -k cpn_ft_h36m_dbb -c checkpoint/model_h36m -gpu 0 --nolog
 ```bash
 python main_3dhp.py -c checkpoint/model_3dhp -gpu 0 --nolog
 ```
-
 
 
 
