@@ -33,9 +33,9 @@ Our model is evaluated on the Human3.6M and MPI-INF-3DHP datasets.
 ### Human3.6M
 
 We follow the same data setup as [VideoPose3D](https://github.com/facebookresearch/VideoPose3D). Download the processed data from [here](#) and place it in the `./data` directory:
-- `data_2d_h36m_gt.npz` — ground-truth 2D keypoints
-- `data_2d_h36m_cpn_ft_h36m_dbb.npz` — 2D keypoints detected using CPN
-- `data_3d_h36m.npz` — ground-truth 3D joint positions
+- `data_2d_h36m_gt.npz` - ground-truth 2D keypoints
+- `data_2d_h36m_cpn_ft_h36m_dbb.npz` - 2D keypoints detected using CPN
+- `data_3d_h36m.npz` - ground-truth 3D joint positions
 
 ### MPI-INF-3DHP
 
